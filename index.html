@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" crossorigin href="./assets/index.css">
+</head>
+<body class="bg-blue-100 h-screen ">
+  <header class="bg-blue-300 py-3 relative">
+    <div class="container  mx-auto w-3/4 flex justify-between">
+      <a class="flex  items-center font-semibold text-2xl text-white" href="#"><img class="h-8 w-10 pr-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAAqCAYAAAATZhM+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKhSURBVGhD7dfNa9NwGMBx/wNNW7t1ltlX26ZZXfo6X/YCqyg68ajiRKeisMnEg6KIWtAOLFN8nwcVX6aOquCY8wVf8KIHD4IHYYiCehMF8ebtsU8gI82eNEuWMDJy+ByaNA/5Numv6bz5dSzMNXaUVdhRVmFHWYUdZRV2lFaueCcE+85D8u4XaHn1b1Kq/A0ih26BM9ZBHjdTpkWF+i9XhSgJ7xsCxsuTM/QyJSpx6R0ZoCR58xM4Ai3kLD0Mjwr1niNPXA0/PAEubhU5U6S2X2RolDPSCtlnfyF+6ik05HfAgsaUsN3Nr4X4wDgZI5Uuf4f6lRunzEX1bVvAv71I7pMzNMrfUwRv115yH4oeHSFjpPBDCewqgadjKzC+rBATKzyA7OPf4AguI+fKGXulwivI7VKRA9fJGDX+bSfIeXJcKm/OQqEGVzzqxJVwpefkHMqsRSFP6yZovvqBjJDC3zPqeCV1jbwxUe7MBuE7IGjvrizP07v3kXfNHuG7lrj4dhI3+EL40V64dDV5jBrdUYwvA4GdJeBvT5CfMHf6peJKZjZdUZ62zZC+/4OMkYsVHmq6ckbQHIW3GHXytSTvfAZHaDk5zwyao8SH09yTP5AYej/tK4bvczXVfiLAO4DarpWmKF93AVIjX8G7vr9qO55M87WPZIxUZvQnNHT2VB2LHIEcsANj4E52Tdmnh6aoUN8FYBanyX2MPwdNZ9+QMXKxY2UI7h6ERet6hR/j7NgvYIuj5Fw9dC0UtYT3XyFDasFb2RltJ+fpYXgUwqtAnbwSfPil5uhlShTCRYE9+YiMEEWP3Kv8nciTx8+EaVEijMMFJnJ4GLgzr2HJwRuV18eFvyPU+41getRssKOswo6yCjvKKuwoq7CjrGIORrHwH4f/xWdaB40HAAAAAElFTkSuQmCC" alt="tailwind">Secured area</a>
+      <nav>
+        <button id="mobile_icon" class="text-white text-end flex sm:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>                  
+        </button>
+        <ul id="main_menu" class="absolute bg-blue-300 w-full left-0 top-14 p-4 text-center text-white font-semibold hidden sm:relative sm:top-0 sm:flex">
+          <li class="mb-2  sm:pl-4 hover:text-blue-600 transition delay-150 duration-300 ease-out hover:ease-in"><a href="">Home</a></li>
+          <li class="mb-2  sm:pl-4 hover:text-blue-600 transition delay-150 duration-300 ease-out hover:ease-in"><a href="">Contact</a></li>
+          <li class="mb-2  sm:pl-4 hover:text-blue-600 transition delay-150 duration-300 ease-out hover:ease-in"><a href="">Login</a></li>
+          <li class="mb-2  sm:pl-4 hover:text-blue-600 transition ddelay-150 duration-300 ease-out hover:ease-in"><a href="">Sign Up</a></li> 
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-blue-100 h-screen rounded-md   sm:py-8">
+    <div class="container w-3/4 mx-auto flex justify-between flex-col sm:flex-row">
+      <div class="order-2 bg-white p-8 rounded-lg sm:order-1  sm:w-1/2">
+        <h3 class="text-3xl font-bold mb-2">Welcome Back</h3>
+        <p class="text-gray-400 mb-2">Please Enter Your Details</p>
+        <form action="">
+          <label class="font-semibold mb-1 block" for="email">Email Address</label>
+          <input class="border p-2 w-full mb-2 rounded-md" type="email" placeholder="Enter your Email Address">
+          <label class="font-semibold  mb-1 block"  for="password">Password</label>
+          <input class="border p-2 w-full mb-2 rounded-md"  type="password" placeholder="Enter your password">
+          <input class="border w-full mb-2 rounded-md bg-blue-500 p-3 text-white cursor-pointer hover:bg-black"  type="submit" value="Sign in">
+        </form>
+        <p class="text-gray-400">Don't have an account ? <a class="text-blue-500 underline" href="#">Sign Up</a></p>
+      </div>
+      <div class="order-1 py-8 sm:order-2 sm:w-1/2  sm:flex  sm:items-center  sm:pl-5">
+        <img class=" rounded-lg " src="./assets/Login-gA1JiJti.png" alt="login">
+      </div>
+    </div>
+  </section>
+
+  <script type="module" crossorigin src="./assets/index.js"></script>
+</body>
+</html>
